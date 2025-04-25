@@ -54,7 +54,7 @@
 ![step8](images/clova_step_8.png)
 
 ### 2.2 txt 업로드
-- 아래처럼 **프롬프트 입력 없이 `회의내용txt` 업로드만** 하면 요약 및 Word 변환이 진행됩니다.
+- 회의요약 프로젝트에 지침에 프롬프트가 미리 입력되어 있어, **프롬프트 입력 없이 `회의내용txt` 업로드만** 하면 요약 및 Word 변환이 진행됩니다.
 - **개인 ChatGPT**를 사용하는 경우, `회의내용.txt` 업로드와 아래 프롬프트를 대화에 입력하세요.
 ```
 - 회의 녹음된 TXT파일을 첨부하면 회의록을 생성하세요.
@@ -75,15 +75,16 @@
 
 ### 3.1 Word 파일 확인
 - 다운로드된 파일을 열고 확인합니다.
-- Confluence 에 게시하기 위해서는 아래와 같이 Markdown Raw Text 형태(#, * 등 이 있어야함)여야 합니다. Markdown Raw Text 형태가 아니라면, ChatGPT에게 **Markdown 형식으로 raw text 형태로 word파일 만들어줘** 라고 요청하고, 다시 다운로드 하세요.
+- Word 파일 내용은 프로젝트 지침 대로 안되어 있는 경우가 있습니다.
+  - Confluence 에 게시하기 위해서는 아래와 같이 Markdown Raw Text 형태(#, * 등 이 있어야함)가 아니라면, ChatGPT에게 **Markdown 형식으로 raw text 형태로 word파일 만들어줘** 라고 요청하고, 다시 다운로드 하세요.
 ![step16](images/clova_step_16.png)
-- Word 파일로 관리하고 싶은데, Markdown형태로 Word파일이 만들어 진경우 **raw text 형태 말고, word파일 만들어줘** 라고 요청하고, 다시 다운로드 하세요.
+  - Word 파일로 관리하고 싶은경우, Markdown형태로 Word파일이 만들어 진경우 **raw text 형태 말고, word파일 만들어줘** 라고 요청하고, 다시 다운로드 하세요.
 
 ### 3.1 이메일 전송
 - ChatGPT가 제공한 `.docx` 파일을 다운로드한 후, **RPA 등록한 메일로 회사 메일 주소에 word파일을 첨부하고 전송**
 - **Word** 파일과 같은 문서 파일만 RPA로 자동으로 반입됩니다.
-- **발신자:** RPA에 등록한 메일 (예: `fragilememor@naver.com`)
-- **수신자:** 본인 회사 메일 (예: `kskyj@kbfg.com`)
+- **발신자:** RPA에 등록한 메일 (예: `fragileXXX@naver.com`)
+- **수신자:** 본인 회사 메일 (예: `kskXX@kbfg.com`)
 
 ### 3.2 내부 반입 파일 열기
 - 웹메일 RPA가 정상적으로 설정된 경우 쪽지로 수신한 Word 파일을 로드합니다.
