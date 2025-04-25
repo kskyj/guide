@@ -38,7 +38,7 @@
 ![step2](images/clova_step_1.png)
 
 
-### 1.3 텍스트 내보내기
+### 1.2 텍스트 내보내기
 - 노트 완료 후 우측 상단 메뉴에서 `.txt` 형식으로 내보내기를 선택하세요.
 
 ![step3](images/clova_step_3.png)  
@@ -54,8 +54,8 @@
 ![step8](images/clova_step_8.png)
 
 ### 2.2 txt 업로드
-- 아래처럼 **프롬프트 입력 없이 `.txt` 업로드만** 하면 요약 및 Word 변환이 진행됩니다.
-- 개인 ChatGPT를 사용하는 경우, 아래 프롬프트를 대화에 입력하세요.
+- 아래처럼 **프롬프트 입력 없이 `회의내용txt` 업로드만** 하면 요약 및 Word 변환이 진행됩니다.
+- **개인 ChatGPT**를 사용하는 경우, `회의내용.txt` 업로드와 아래 프롬프트를 대화에 입력하세요.
 ```
 - 회의 녹음된 TXT파일을 첨부하면 회의록을 생성하세요.
 - 회의제목은 현재날짜와 회의제목으로 조합해서 만드세요. 예를들면 "250404 솔루션 협의" 처럼 만드세요.
@@ -75,9 +75,9 @@
 
 ### 3.1 Word 파일 확인
 - 다운로드된 파일을 열고 확인합니다.
-- Confluence 에 Markdown 으로 Import 하기 위해서는, 아래와 같이 Markdown Raw Text 형태(#, * 등 이 있어야함)여야 합니다. Markdown Raw Text 형태가 아니라면, ChatGPT에게 **Markdown 형식으로 raw text 형태로 word파일 만들어줘** 라고 요청하고, 다시 다운로드 하세요.
+- Confluence 에 게시하기 위해서는 아래와 같이 Markdown Raw Text 형태(#, * 등 이 있어야함)여야 합니다. Markdown Raw Text 형태가 아니라면, ChatGPT에게 **Markdown 형식으로 raw text 형태로 word파일 만들어줘** 라고 요청하고, 다시 다운로드 하세요.
 ![step16](images/clova_step_16.png)
-- 별도 Word 파일로 관리하고 싶은데, Markdown형태로 Word파일이 만들어 진경우 **raw text 형태 말고, word파일 만들어줘** 라고 요청하고, 다시 다운로드 하세요.
+- Word 파일로 관리하고 싶은데, Markdown형태로 Word파일이 만들어 진경우 **raw text 형태 말고, word파일 만들어줘** 라고 요청하고, 다시 다운로드 하세요.
 
 ### 3.1 이메일 전송
 - ChatGPT가 제공한 `.docx` 파일을 다운로드한 후, **RPA 등록한 메일로 회사 메일 주소에 word파일을 첨부하고 전송**
