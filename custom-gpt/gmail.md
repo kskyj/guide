@@ -69,6 +69,10 @@
 ```
 https://chat.openai.com/aip/g-xxxxxxxxxxxxxxxxd/oauth/callback
 ```
+- 테스트를 위해 PlayGround URI를 등록한다.
+```
+https://developers.google.com/oauthplayground
+```
 
 6. **저장** 버튼 클릭
 7. 발급된 **클라이언트 ID**와 **클라이언트 시크릿(보안 비밀번호)**을 기록
