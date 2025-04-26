@@ -53,7 +53,7 @@
    - 개발자 연락처 이메일: 본인 이메일
 4. 테스트 사용자 추가
    - 사용할 Gmail 계정을 등록
-
+![alt text](resources/image-1.png)
 > `앱 게시`할 필요 없음
 ---
 
@@ -65,7 +65,6 @@
    - **웹 애플리케이션** 선택
 4. 이름 지정 (예: `CustomGPT OAuth Client`)
 5. 승인된 리디렉션 URI 추가
-
 ✅ CustomGPT용 리디렉션 URI는 다음처럼 등록해야 하는데, 아직은 ChatGPT와 연결을 안해서 입력 할 수 없음
 ```
 https://chat.openai.com/aip/g-xxxxxxxxxxxxxxxxd/oauth/callback
@@ -80,6 +79,7 @@ https://chat.openai.com/aip/g-xxxxxxxxxxxxxxxxd/oauth/callback
 ## 3. Gmail을 ChatGPT(CustomGPT)와 연결
 
 ### 3.1 내 GPT 에서 새 작업 추가
+![alt text](resources/image-2.png)
 - CustomGPT에서 **"Actions(새 작업 만들기)"** 클릭
 - 인증 → OAuth
 
@@ -95,7 +95,9 @@ https://chat.openai.com/aip/g-xxxxxxxxxxxxxxxxd/oauth/callback
 > 🔹 범위가 여러 개이면 띄어쓰기로 이어서 입력  
 > 🔹 예: `scope1 scope2`
 
-### 3.2 OpenAPI 스키마 입력력
+![alt text](resources/image.png)
+
+### 3.2 OpenAPI 스키마 입력
 
 ```yaml
 openapi: 3.1.0
@@ -207,15 +209,19 @@ components:
   schemas: {}
 ```
 - 입력이 완료되면 가능한 작업이 생성되고 테스트가 가능함
+![alt text](resources/image-7.png)
+![alt text](resources/image-3.png)
 - 테스트 할때 OAuth 인증을 요청하는데 redirect_uri_mismatch 오류가 발생함
+![alt text](resources/image-4.png)
 - 이 오류는 CustomGPT에서 사용하는 리디렉션 URI가 GCP에 등록된 URI가 등록이 되지 않아 발생함
 - 따라서, CustomGPT에서 사용하는 리디렉션 URI를 GCP에 등록해야 함
 - CustomGPT에서 사용하는 리디렉션 URI는 아래와 같은 형식이며, Google 계정으로 로그인 창에서 `400 오류:redirect_url_mismatch` 오류가 발생했을 때 `오류 세부정보`를 클릭하면 확인 가능함
 ```
 https://chat.openai.com/aip/g-xxxxxxxxxxxxxxxxxd/oauth/callback
 ```
+![alt text](resources/image-5.png)
 - 오류 세부정보에 나온 URI를 2.4 항목으로 이동하여 등록
-
+![alt text](resources/image-6.png)
 ---
 
 ## 4. 최종 점검 체크리스트 ✅
