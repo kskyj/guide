@@ -1,8 +1,9 @@
-# Custom GPT 특징 요약
+# Customize GPT 특징 요약
 
 ## 개요
-`Custom GPT`는 OpenAI가 제공하는 GPT Builder를 통해 사용자가 자신만의 맞춤형 챗봇을 생성할 수 있도록 해주는 기능입니다.  
-업로드한 지식(Knowledge), 지침(Instructions), 액션(Actions)을 조합해 별도 인프라 없이도 RAG, 지능형 API 연동, 개인화 설정이 가능합니다.
+- `Custom GPT`는 OpenAI가 제공하는 GPT Builder를 통해 사용자가 자신만의 맞춤형 챗봇을 생성할 수 있도록 해주는 기능입니다.  
+- 업로드한 지식(Knowledge), 지침(Instructions), 액션(Actions)을 조합해 별도 인프라 없이도 RAG, 지능형 API 연동, 개인화 설정이 가능합니다.
+- Plus Edition부터 생성할 수 있으며, 공유를 통해 Free Edition 사용이 가능합니다.
 
 ## 핵심 기능
 - **지식 업로드 (Knowledge)**  
